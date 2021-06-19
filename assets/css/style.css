@@ -1621,47 +1621,19 @@ section {
 
 /* =============================================================================================================== */
 
-/* =========================================================================================================== */
-
-.carousel {
-  margin-top: 30px;
-  margin-left: 80px;
-}
-.carousel-inner > .item > img,
-.carousel-control.right {
-  right: 70px !important;
-}
-
-.carousel-inner > .item > a > img {
-  width: 1500px;
+#slider .container-fluid {
+  padding: 0 15px;
   margin: auto;
-  height: 1000px;
+  width: 1200px;
 }
-
-.post-img {
+#slider .slider-inner {
+  padding: 0;
+}
+.slider-inner .item img {
+  display: block;
+  width: 100%;
   height: 400px;
-  /* box-shadow: inset 0 0 0 1500px rgba(0, 0, 0, 0.5); */
 }
-.post-content {
-  color: white;
-  margin-left: 150px;
-}
-
-.item {
-  width: 1500px;
-}
-
-@media screen and (max-width: 768px) {
-  .carousel {
-    margin-left: 5px;
-    height: 650px;
-  }
-  .post-content {
-    margin-left: 0;
-
-    /* margin-bottom: 5px; */
-  }
-  .carousel-control.right {
-    right: 0 !important;
-  }
+.slider-inner h1 {
+  color: purple;
 }
