@@ -1621,6 +1621,8 @@ section {
 
 /* =============================================================================================================== */
 
+/* Slider */
+
 #slider .container-fluid {
   padding: 0 15px;
   margin: auto;
@@ -1634,6 +1636,39 @@ section {
   width: 100%;
   height: 400px;
 }
-.slider-inner h1 {
-  color: purple;
+
+@media screen and (max-width: 768px) {
+  #slider .container-fluid {
+    padding: auto;
+    margin: auto;
+    width: auto;
+  }
+  #slider .slider-inner {
+    padding: 10px;
+    margin: 10px;
+  }
+  .slider-inner .item img {
+    /* display: block; */
+    max-width: 500px;
+    height: 200px;
+  }
+
+  .post-slide {
+    width: 100% !important;
+  }
+
+  .post-img {
+    width: 100%;
+  }
+
+  .post-content {
+    width: auto;
+  }
+
+  .owl-pagination {
+    display: none;
+  }
+  .owl-buttons {
+    display: none;
+  }
 }
