@@ -1507,17 +1507,22 @@ Project Container
 }
 
 /* ================================================================================================================ */
+/* 
+.modal {
+  margin-left: 200px !important;
+  position: fixed;
+} */
 
-.modal-dialog {
-  margin-left: 200px;
-}
+/* .modal-dialog {
+  margin: auto;
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .modal-dialog {
     margin-left: 20px !important;
     width: 400px !important;
   }
-}
+} */
 
 /* ================================================================================================================
 Hero section
@@ -1555,6 +1560,20 @@ Hero section
 
 .col-lg-4 {
   margin-top: 80px;
+}
+
+@media screen and (max-width) {
+  .container {
+    min-width: 100vw;
+    object-fit: cover;
+  }
+  .col-lg-8 {
+    margin-top: 10px;
+  }
+
+  .col-lg-4 {
+    margin-top: 0px;
+  }
 }
 
 /* ================================================================================================================= */

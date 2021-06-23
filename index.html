@@ -50,6 +50,10 @@
     -->
     <!------ Include the above in your HEAD tag ---------->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
 
 
@@ -72,9 +76,10 @@
   <body>
     <div id="WAButton" style="z-index:1;"></div>
 
-    <div class="modal " id="myModal" role="dialog">
-
-
+   
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header" style="background-color: #3350a0; color: white;">
@@ -83,35 +88,30 @@
         </div>
         <div class="modal-body">
           <div class="form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
-              data-msg="Please enter at least 4 chars" />
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
             <div class="validate"></div>
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
-              data-msg="Please enter a valid email" />
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
             <div class="validate"></div>
           </div>
           <div class="form-group">
-            <input type="number" class="form-control" name="mob" id="mob" placeholder="Mobile" data-rule="minlen:4"
-              data-msg="Please enter at least 8 chars of subject" />
+            <input type="number" class="form-control" name="mob" id="mob" placeholder="Mobile" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
             <div class="validate"></div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-              data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-            <div class="validate"></div>
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+          <div class="validate"></div>
           </div>
-          <div class="text-center" style="float: left !important;"><button class="btn btn-primary"
-              type="submit">Submit</button></div>
+          <div class="text-center" style="float: left !important;"><button class="btn btn-primary" type="submit">Submit</button></div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         </div>
       </div>
-
-
+      
     </div>
+  </div>
 
 
     <!-- ======= Top Bar ======= -->
