@@ -151,7 +151,7 @@ h6 {
 }
 
 #topbar .social-links a {
-  color: #fff;
+  color: black;
   padding-left: 15px;
   display: inline-block;
   line-height: 1px;
@@ -159,7 +159,7 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-  color: #fff;
+  color: #4285f4;
 }
 
 #topbar .social-links a:first-child {
@@ -447,7 +447,7 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+/* #hero {
   width: 100%;
   height: 100vh;
   background: url("../img/hero-bg.jpg") center;
@@ -463,71 +463,7 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-}
-
-#hero .container {
-  padding-top: 70px;
-}
-
-#hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-#hero h2 {
-  color: #eee;
-  margin-bottom: 30px;
-  font-size: 24px;
-}
-
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  display: inline-block;
-  padding: 10px 28px;
-  transition: 0.5s;
-  border: 2px solid #fff;
-  color: #fff;
-}
-.php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 15px;
-}
-#hero .btn-get-started:hover {
-  background: #cc1616;
-  border-color: #cc1616;
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero {
-    text-align: center;
-  }
-  #hero .container {
-    padding-top: 40px;
-  }
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-}
+} */
 
 /*--------------------------------------------------------------
 # Sections General
@@ -1486,7 +1422,9 @@ section {
   display: none !important;
 }
 
-/* =============================================================================================================== */
+/* ===============================================================================================================
+Project Container
+================================================================================================================== */
 
 .slider {
   max-width: 100%;
@@ -1553,6 +1491,10 @@ section {
   border: none;
 }
 
+.enq-btn:hover {
+  background-color: #254a86;
+}
+
 .project-container {
   justify-content: center;
   text-align: center;
@@ -1564,8 +1506,10 @@ section {
   font-weight: 500;
 }
 
+/* ================================================================================================================ */
+
 .modal-dialog {
-  margin-left: -200px !important;
+  margin-left: 200px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1573,22 +1517,44 @@ section {
     margin-left: 20px !important;
     width: 400px !important;
   }
-
-  /* .card {
-    width: min-content;
-    height: 575px;
-  } */
 }
 
-.carousel {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  z-index: 10000;
+/* ================================================================================================================
+Hero section
+================================================================================================================= */
+
+.main-text {
+  position: absolute;
+  top: 50px;
+  width: 96.66666666666666%;
+  color: #fff;
 }
-.carousel img {
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  position: relative;
+
+.carousel-inner:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
+
+.container {
+  min-width: 100vw;
+}
+
+.php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 15px;
+}
+
+.col-lg-8 {
+  margin-top: 150px;
+}
+
+.col-lg-4 {
+  margin-top: 80px;
+}
+
+/* ================================================================================================================= */
